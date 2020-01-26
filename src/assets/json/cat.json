@@ -1,0 +1,287 @@
+[
+    {
+        "id": 0,
+        "RUS": "Категории",
+        "WORD": "Category"
+    },
+    {
+        "id": 1,
+        "RUS": "Продвинутые слова",
+        "WORD": "Advanced words"
+    },
+    {
+        "id": 2,
+        "RUS": "Анатомия",
+        "WORD": "Anatomy"
+    },
+    {
+        "id": 3,
+        "RUS": "Животные",
+        "WORD": "Animals"
+    },
+    {
+        "id": 4,
+        "RUS": "Внешность",
+        "WORD": "Appearance"
+    },
+    {
+        "id": 5,
+        "RUS": "Археология",
+        "WORD": "Archaeology"
+    },
+    {
+        "id": 6,
+        "RUS": "Архитектура",
+        "WORD": "Architecture"
+    },
+    {
+        "id": 7,
+        "RUS": "Искусство",
+        "WORD": "Art"
+    },
+    {
+        "id": 8,
+        "RUS": "Базовые глаголы",
+        "WORD": "Basic verbs"
+    },
+    {
+        "id": 9,
+        "RUS": "Бизнес",
+        "WORD": "Business"
+    },
+    {
+        "id": 10,
+        "RUS": "Карьера",
+        "WORD": "Career"
+    },
+    {
+        "id": 11,
+        "RUS": "Характер",
+        "WORD": "Character"
+    },
+    {
+        "id": 12,
+        "RUS": "Одежда",
+        "WORD": "Clothing"
+    },
+    {
+        "id": 13,
+        "RUS": "Цвета",
+        "WORD": "Colors"
+    },
+    {
+        "id": 14,
+        "RUS": "Компьютер",
+        "WORD": "Computer"
+    },
+    {
+        "id": 15,
+        "RUS": "Строительство",
+        "WORD": "Construction"
+    },
+    {
+        "id": 16,
+        "RUS": "Экология",
+        "WORD": "Ecology"
+    },
+    {
+        "id": 17,
+        "RUS": "Экономика",
+        "WORD": "Economy"
+    },
+    {
+        "id": 18,
+        "RUS": "Семья",
+        "WORD": "Family"
+    },
+    {
+        "id": 19,
+        "RUS": "Рыба",
+        "WORD": "Fish"
+    },
+    {
+        "id": 20,
+        "RUS": "Цветы",
+        "WORD": "Flowers"
+    },
+    {
+        "id": 21,
+        "RUS": "Еда",
+        "WORD": "Food"
+    },
+    {
+        "id": 22,
+        "RUS": "Мебель",
+        "WORD": "Furniture"
+    },
+    {
+        "id": 23,
+        "RUS": "География",
+        "WORD": "Geography"
+    },
+    {
+        "id": 24,
+        "RUS": "Здоровье",
+        "WORD": "Health"
+    },
+    {
+        "id": 25,
+        "RUS": "Хобби",
+        "WORD": "Hobby"
+    },
+    {
+        "id": 26,
+        "RUS": "Дом, вещи",
+        "WORD": "Home"
+    },
+    {
+        "id": 27,
+        "RUS": "Идиомы",
+        "WORD": "Idioms"
+    },
+    {
+        "id": 28,
+        "RUS": "Неправильные глаголы",
+        "WORD": "Irregular verbs"
+    },
+    {
+        "id": 29,
+        "RUS": "Юриспруденция",
+        "WORD": "Legal english"
+    },
+    {
+        "id": 30,
+        "RUS": "Литература",
+        "WORD": "Literature"
+    },
+    {
+        "id": 31,
+        "RUS": "Маркетинг",
+        "WORD": "Marketing"
+    },
+    {
+        "id": 32,
+        "RUS": "СМИ",
+        "WORD": "Mass media"
+    },
+    {
+        "id": 33,
+        "RUS": "Математика",
+        "WORD": "Math"
+    },
+    {
+        "id": 34,
+        "RUS": "Военное дело, оружие",
+        "WORD": "Military weapons"
+    },
+    {
+        "id": 35,
+        "RUS": "Деньги",
+        "WORD": "Money"
+    },
+    {
+        "id": 36,
+        "RUS": "Кино",
+        "WORD": "Movie"
+    },
+    {
+        "id": 37,
+        "RUS": "Музыка",
+        "WORD": "Music"
+    },
+    {
+        "id": 38,
+        "RUS": "Числа",
+        "WORD": "Numbers"
+    },
+    {
+        "id": 39,
+        "RUS": "Фотография",
+        "WORD": "Photography"
+    },
+    {
+        "id": 40,
+        "RUS": "Фразовые глаголы",
+        "WORD": "Phrasal verbs"
+    },
+    {
+        "id": 41,
+        "RUS": "Политика",
+        "WORD": "Politics"
+    },
+    {
+        "id": 42,
+        "RUS": "Психология",
+        "WORD": "Psychology"
+    },
+    {
+        "id": 43,
+        "RUS": "Магазины",
+        "WORD": "Shops"
+    },
+    {
+        "id": 44,
+        "RUS": "Знаки зодиака",
+        "WORD": "Signs of zodiac"
+    },
+    {
+        "id": 45,
+        "RUS": "Социальные сети",
+        "WORD": "Social networks"
+    },
+    {
+        "id": 46,
+        "RUS": "Космос",
+        "WORD": "Space"
+    },
+    {
+        "id": 47,
+        "RUS": "Спорт",
+        "WORD": "Sport"
+    },
+    {
+        "id": 48,
+        "RUS": "Время, календарь",
+        "WORD": "Time calendar"
+    },
+    {
+        "id": 49,
+        "RUS": "Toп 100",
+        "WORD": "Top 100"
+    },
+    {
+        "id": 50,
+        "RUS": "Toп 1000",
+        "WORD": "Top 1000"
+    },
+    {
+        "id": 51,
+        "RUS": "Toп 3000",
+        "WORD": "Top 3000"
+    },
+    {
+        "id": 52,
+        "RUS": "Город",
+        "WORD": "Town"
+    },
+    {
+        "id": 53,
+        "RUS": "Транспорт",
+        "WORD": "Transport"
+    },
+    {
+        "id": 54,
+        "RUS": "Путешествия",
+        "WORD": "Travel"
+    },
+    {
+        "id": 55,
+        "RUS": "Деревья, кустарники",
+        "WORD": "Trees"
+    },
+    {
+        "id": 56,
+        "RUS": "Свои слова",
+        "WORD": "Custom"
+    }
+]
