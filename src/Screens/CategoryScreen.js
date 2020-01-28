@@ -1,29 +1,27 @@
-import React, { useState, useContext } from 'react'
+import React from 'react'
 import { TouchableOpacity, ScrollView } from 'react-native'
 import { ListItem } from 'react-native-elements'
-import { Context } from '../App.js'
+import { connect } from 'react-redux'
 
 
-export default CategoryScreen = () => {
+const CategoryScreen = (props) => {
+    console.log('--->', props)
     return (
         <ScrollView>
             {
-                getCategories()
+                getCategories(props)
             }
         </ScrollView>
     )
 }
 
-const getCategories = () => {
-    // const { state, setState } = useContext(Context)
-    // const { category } = state
-    const  category  =  require('../assets/json/cat.json')
-    // console.log('state', state);
+const getCategories = ({category}) => {
 
-    const handleSetCategory = current => { 
+    const handleSetCategory = current => {
         // category[current.id] = current
         // setState({ ...state, category }) 
     }
+    
     return category.map(item => (<CategoryItem category={item} key={item.id} setCategory={handleSetCategory} />))
 }
 
@@ -39,7 +37,7 @@ const CategoryItem = ({ category, setCategory }) => {
         <TouchableOpacity onPress={onPress}>
             <ListItem
                 key={category.id + 'i'}
-                leftAvatar={{ source: require('../assets/img/icon.png') }}
+                leftAvatar={{ source: require('../Assets/img/icon.png') }}
                 title={category.WORD}
                 subtitle={category.RUS}
                 checkBox={{
@@ -50,3 +48,10 @@ const CategoryItem = ({ category, setCategory }) => {
             />
         </TouchableOpacity>)
 }
+
+const mapStateToProps = state => {
+    console.log('CategoryScreen', state);
+    return { category: state.category }
+}
+
+export default connect(mapStateToProps)(CategoryScreen)

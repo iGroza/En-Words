@@ -6,6 +6,7 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 import { createAppContainer } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 import InfoScreen from '../Screens/InfoScreen';
+import { connect } from 'react-redux';
 
 
 const routerConfig = {
@@ -44,4 +45,4 @@ const routerConfig = {
 }
 
 const Navigator = createBottomTabNavigator(routerConfig, { initialRouteName: 'CategoryScreen' })
-export default createAppContainer(Navigator)
+export default connect(state => state)(createAppContainer(Navigator))

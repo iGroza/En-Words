@@ -1,25 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Navigation from './Navigation/Navigation';
 import { Text } from 'react-native-elements';
+import strore from './Store/strore'
+import { Provider } from 'react-redux';
 
 export default App = () => {
-    const initialState = {
-        category: [],
-        word: {},
-        wordCat: {}
-    }
-
-    const [state, setState] = useState(initialState)
-
-    useEffect(() => {
-        setState({ ...state, category: require('./assets/json/cat.json') })
-    }, [])
 
     return (
-        <Context.Provider value={{ state, setState }}>
+        <Provider store={strore}>
             <Navigation />
-        </Context.Provider>
+        </Provider>
     )
 }
-
-export const Context = React.createContext()
