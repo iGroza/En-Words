@@ -1,47 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { TouchableOpacity, ScrollView } from 'react-native'
 import { ListItem } from 'react-native-elements'
-import { connect } from 'react-redux'
+import { connect, useDispatch } from 'react-redux'
+import { SELECT_CATEGORY } from '../Store/application/CategoryScreen/constants'
 
 
-const CategoryScreen = (props) => {
-    console.log('--->', props)
+const CategoryScreen = ({ category }) => {
+    const dispatch = useDispatch()
+    console.log('wow');
+
+    const handleSetCategory = current => {
+        dispatch({ type: SELECT_CATEGORY, current })
+    }
     return (
         <ScrollView>
-            {
-                getCategories(props)
-            }
+            {category.map(item => (<CategoryItem category={item} key={item.id} setCategory={handleSetCategory} />))}
         </ScrollView>
     )
 }
 
-const getCategories = ({category}) => {
-
-    const handleSetCategory = current => {
-        // category[current.id] = current
-        // setState({ ...state, category }) 
-    }
-    
-    return category.map(item => (<CategoryItem category={item} key={item.id} setCategory={handleSetCategory} />))
-}
-
-
 const CategoryItem = ({ category, setCategory }) => {
     category.isSelected = category.isSelected || false
 
+    let [cat, setCat] = useState(category)
+
     const onPress = () => {
-        setCategory({ ...category, isSelected: !category.isSelected })
+        let current = { ...cat, isSelected: !cat.isSelected }
+        setCategory(current)
+        setCat(current)
     }
 
     return (
         <TouchableOpacity onPress={onPress}>
             <ListItem
-                key={category.id + 'i'}
+                key={cat.id + 'i'}
                 leftAvatar={{ source: require('../Assets/img/icon.png') }}
-                title={category.WORD}
-                subtitle={category.RUS}
+                title={cat.WORD}
+                subtitle={cat.RUS}
                 checkBox={{
-                    checked: category.isSelected,
+                    checked: cat.isSelected,
                     onPress
                 }}
                 bottomDivider
@@ -50,8 +47,10 @@ const CategoryItem = ({ category, setCategory }) => {
 }
 
 const mapStateToProps = state => {
-    console.log('CategoryScreen', state);
     return { category: state.category }
 }
 
-export default connect(mapStateToProps)(CategoryScreen)
+export default connect(mapStateToProps, (e, e2) => {
+    alert(e2)
+    return e2
+})(CategoryScreen)
